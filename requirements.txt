@@ -1,0 +1,28 @@
+# GamePlayer dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Phase 1 only strictly needs: torch, gymnasium, stable-baselines3, tensorboard.
+# The Atari extras are included now so Phase 3 needs no re-install.
+
+# Deep-learning library (CPU build is fine for Phase 1/2).
+torch>=2.2
+
+# RL environments + a common reset()/step() interface.
+gymnasium>=0.29
+
+# The Atari games (Arcade Learning Environment) for Phase 3.
+ale-py>=0.9
+
+# Ready-made, trusted DQN/PPO implementations (our reference).
+stable-baselines3>=2.3
+
+# Image preprocessing used by the Atari wrappers (Phase 3).
+opencv-python>=4.9
+
+# Training dashboards + reward plots.
+tensorboard>=2.16
+matplotlib>=3.8
+
+# Nice training progress bars (used by model.learn(progress_bar=True)).
+tqdm>=4.66
+rich>=13.7
